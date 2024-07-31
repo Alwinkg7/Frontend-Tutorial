@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- datetime -->
+ <!-- uppercase -->
+  <!-- mouseover,out,in,side -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo">Hello</h2>
+    <label for="">Enter your name:</label>
+    <input type="text" name="" id="name" onchange="uppercase()"><br><br>
+    <label for="">Enter your age:</label>
+    <input type="text" id="age">
+    <button onclick="displaydate()">Click mee..!</button>
+    <div class="div1" onmouseover="mouseover(this)" onmouseout="mouseout(this)">
+        <h3>Mouse over mee..!</h3>
+    </div>
+    
+    
+    
+   <style>
+    .div1 {
+        width: 200px;
+        height: 25px;
+        color: brown;
+        background-color: black;
+    }
+   </style>
+
+
+    <script>
+        function displaydate(){
+            document.getElementById("demo").innerHTML=Date();    
+        }
+        function uppercase(){
+            x = document.getElementById("name");
+            x.value = x.value.toUpperCase();
+        }
+        function mouseover(obj){
+            obj.innerHTML = "Patticheee";
+        }
+        function mouseout(obj){
+            obj.innerHTML = "Veendum Pattiche";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.div1 {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+} 
+#div1 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+body {
+    background-image: url(c:\Users\Asus\OneDrive\Pictures\Saved Pictures\sample.webp);
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">click here to slide up..!</div>
+    <div id="div2"><h2>jQuery language</h2></div>
+
+    <style>
+        #div1{
+            background-color: darkblue;
+            height: 200px;
+        }
+        #div2{
+            background-color: cornflowerblue;
+            height: 200px;
+        }
+    </style>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div1").click(function(){
+                $("#div2").slideUp("slow")
+            })
+            $("#div1").dblclick(function(){
+                $("#div2").slideDown("slow")
+            })
+        })
+    </script>
+
+</body>
+</html>

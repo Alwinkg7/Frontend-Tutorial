@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" style="text-align: center; background-color: chartreuse; height: 50px; font-size: larger;">Click me to slide ....!</div>
+    <div id="div2" style="text-align:center; background-color: brown; height: 150px; font-size: large; display: none;">Welcome machaaa to maa jQuery World...</div>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div1").click(function(){
+                $("#div2").slideDown("slow")
+            })
+        })
+    </script>
+
+</body>
+</html>
